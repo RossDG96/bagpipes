@@ -2,9 +2,9 @@ import random
 import time
 
 notes = [
-    "Low - G",
-    "Low - A",
-    "B",
+    # "Low - G",
+    # "Low - A",
+    # "B",
     "C",
     "D",
     "E",
@@ -19,12 +19,13 @@ iterator = 0
 
 def display_random_item():
     random_item = random.choice(notes)
-    print(random_item)
+    return random_item
 
 def timer(seconds):
     time.sleep(seconds)
 
 while iterator < iterations:
     iterator += 1; 
-    display_random_item()
+    item = display_random_item()
+    print(f"{iterator} {item}")
     timer(time_delay)
