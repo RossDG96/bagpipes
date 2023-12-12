@@ -1,17 +1,10 @@
 import random
 import time
 
-notes = [
-    # "Low - G",
-    # "Low - A",
-    # "B",
-    # "C",
-    # "D",
-    # "E",
-    "F",
-    "High - G",
-    "High - A"
-]
+# Import the my_notes.py file. Customize my_notes_example.py to change which notes you want to practice. You have to rename my_notes_example.py to my_notes.py for the applcation to work. 
+import my_notes
+
+notes = my_notes.notes
 
 time_delay = int(input("What is the time delay that should be used in seconds? "))
 iterations = int(input("How many iterations do you want to do? "))
