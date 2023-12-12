@@ -5,9 +5,9 @@ notes = [
     # "Low - G",
     # "Low - A",
     # "B",
-    "C",
-    "D",
-    "E",
+    # "C",
+    # "D",
+    # "E",
     "F",
     "High - G",
     "High - A"
@@ -23,6 +23,12 @@ def display_random_item():
 
 def timer(seconds):
     time.sleep(seconds)
+counter = 0
+
+while 5 > counter:
+    counter += 1;   
+    print(f"Starting in {5 - counter} seconds...")
+    time.sleep(1)
 
 while iterator < iterations:
     iterator += 1; 
